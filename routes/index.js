@@ -10,7 +10,7 @@ shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 
 var validUrl = require('valid-url');
 
-var config = require('../config.js');
+var config = require('../config/config');
 var mLab = 'mongodb://' + config.db.host + '/'+ config.db.name;
 
 
