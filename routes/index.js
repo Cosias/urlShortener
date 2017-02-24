@@ -19,6 +19,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Url Shortener' });
 });
 
+/* GET new url*/
 router.get('/new/:url(*)', function(req, res, next){
 	mongodb.connect(mLab, function(err,db){
 		if(err){
@@ -59,6 +60,7 @@ router.get('/new/:url(*)', function(req, res, next){
 	});	
 });
 
+/*GET Shortened url page*/
 router.get('/:shorturl', function(req, res, next){
 	
 	mongodb.connect(mLab, function(err,db){
