@@ -10,10 +10,13 @@ shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 
 var validUrl = require('valid-url');
 
-// var config = require('../config');
+/*Needed for Heroku Deployment*/
 var host = process.env['host'];
 var name = process.env['name'];
 var mLab = 'mongodb://' + host + '/' + name;
+
+/*Needed for Local Use*/
+// var config = require('../config');
 // var mLab = 'mongodb://' + config.db.host + '/'+ config.db.name;
 
 
