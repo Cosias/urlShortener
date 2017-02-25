@@ -13,7 +13,7 @@ var validUrl = require('valid-url');
 // var config = require('../config');
 var host = process.env['host'];
 var name = process.env['name'];
-var mLab = 'mongodb://'+host+'/'+name;
+var mLab = 'mongodb://' + host + '/' + name;
 // var mLab = 'mongodb://' + config.db.host + '/'+ config.db.name;
 
 
